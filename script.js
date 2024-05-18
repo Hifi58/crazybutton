@@ -10,6 +10,9 @@ r = Array.from({ length: 256 }, (e, i) => i);
 g = Array.from({ length: 256 }, (e, i) => i);
 b = Array.from({ length: 256 }, (e, i) => i);
 
+let randomR = r[Math.floor(Math.random() * 256)];
+console.log(r.indexOf(randomR));
+
 // Listener
 button.addEventListener("click", changebg);
 button.addEventListener("mouseenter", changecolor);
