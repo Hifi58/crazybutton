@@ -11,7 +11,12 @@ g = Array.from({ length: 256 }, (e, i) => i);
 b = Array.from({ length: 256 }, (e, i) => i);
 
 let randomR = r[Math.floor(Math.random() * 256)];
+let randomG = g[Math.floor(Math.random() * 256)];
+let randomB = b[Math.floor(Math.random() * 256)];
+
 console.log(r.indexOf(randomR));
+console.log(g.indexOf(randomG));
+console.log(b.indexOf(randomB));
 
 // Listener
 button.addEventListener("click", changebg);
